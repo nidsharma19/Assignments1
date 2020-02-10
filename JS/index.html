@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="Css/Styles.css">
+	<link rel="stylesheet" href="./Styles.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<title>User Registration Form</title>
 </head>
@@ -11,31 +11,31 @@
 		<form name="UDetails" method="POST" action="my.html" onsubmit="return validation()"> 
 			<div class="row">
 			  <div class="col-4 mb-2">
-				<input type="text" class="form-control" placeholder="First name" name="firstname" minLength="3" maxLength="20">
+				<input id="firstname" type="text" class="form-control" placeholder="First name" name="firstname" minLength="3" maxLength="20">
 			  </div>
 			  <div class="col-4 mb-2">
-				<input type="text" class="form-control" placeholder="Middle name" name="middlename" minLength="3" maxLength="30">
+				<input id="middlename" type="text" class="form-control" placeholder="Middle name" name="middlename" minLength="3" maxLength="30">
 			  </div>
 			  <div class="col-4 mb-2">
-				<input type="text" class="form-control" placeholder="Last name" name="lastname" minLength="3" maxLength="30">
+				<input id="lastname" type="text" class="form-control" placeholder="Last name" name="lastname" minLength="3" maxLength="30">
 			  </div>
 			  <div class="col-4 mb-2">
-				<input type="email" class="form-control" placeholder="Email" name="email">
+				<input id="email" type="email" class="form-control" placeholder="Email" name="email">
 			  </div>
 			  <div class="col-4 mb-2">
 				<input type="password" class="form-control" placeholder="Password" name="password"  >
 			  </div>
 			  <div class="col-4 mb-2">
-				<input type="number" class="form-control" placeholder="Mobile" name="mobile" minlength="10"
+				<input id="mobile" type="number" class="form-control" placeholder="Mobile" name="mobile" minlength="10"
 				maxlength="10">
 			  </div>
 			  <div class="col-4 mb-2">
 				Date Of Birth:
-				<input type="date" class="form-control" id="dob" placeholder="Birthday" name="birthday">
+				<input id="birthday" type="date" class="form-control" id="dob" placeholder="Birthday" name="birthday">
 			  </div>
 			  <div class="col-4 mb-2 gender">
 				Gender:<br>
-				<select class="form-control" name="gender">
+				<select id="gender" class="form-control" name="gender">
 					<option value="default" >default</option>
 					<option value="Women" >Women</option>
 					<option value="Men">Men</option>
@@ -43,7 +43,7 @@
 				</div>
 				<div class="col-4 mb-2 nationality">
 					Nationality: <br>
-					<select class="form-control" name=" Nationality">
+					<select id="nationality" class="form-control" name=" Nationality">
 						<option value="default" >Indian</option>
 						<option value="Other" >Other</option>
 						<option value="NRI" >NRI</option>
@@ -52,28 +52,28 @@
 				<div class="col hobbies">	
 					Hobbies:<br>
 					<label class="form-check-label" for="Cricket">Cricket</label>
-					<input class="form-check-inline" type="checkbox" name="hobbies">
+					<input id="cricket" class="form-check-inline" type="checkbox" name="hobbies">
 					<label class="form-check-label" for="Badminton">Badminton</label>
-					<input class="form-check-inline" type="checkbox" name="hobbies">
+					<input id="badminton" class="form-check-inline" type="checkbox" name="hobbies">
 					<label class="form-check-label" for="Football">Football</label>
-					<input class="form-check-inline" type="checkbox" name="hobbies">
+					<input id="football" class="form-check-inline" type="checkbox" name="hobbies">
 					<label class="form-check-label" for="Volleyball">Volleyball</label>
-					<input class="form-check-inline" type="checkbox" name="hobbies">
+					<input id="volleyball" class="form-check-inline" type="checkbox" name="hobbies">
 					<label class="form-check-label" for="Cycling">Cycling</label>
-					<input class="form-check-inline" type="checkbox" name="hobbies">
+					<input id="cycling" class="form-check-inline" type="checkbox" name="hobbies">
 					<label class="form-check-label" for="ReadingBooks">Reading Books</label>
-					<input class="form-check-inline" type="checkbox" name="hobbies">
+					<input id="readingbooks" class="form-check-inline" type="checkbox" name="hobbies">
 					<label class="form-check-label" for="Singing">Singing</label>
-					<input class="form-check-inline" type="checkbox" name="hobbies">
+					<input id="singing" class="form-check-inline" type="checkbox" name="hobbies">
 					<label class="form-check-label" for="Sketching">Sketching</label>
-					<input class="form-check-inline" type="checkbox" name="hobbies">
+					<input id="sketching" class="form-check-inline" type="checkbox" name="hobbies">
 				</div>
 				<br>
 				<br>
 				<br>
 				<div class="col-12 education">
 					Education: <br>
-					<select class="form-control col-4" name="Education">
+					<select id="education" class="form-control col-4" name="Education">
 						<option value="Primary">Primary</option>
 						<option value="High School" >High School</option>
 						<option value="Intermediate">Intermediate</option>
@@ -92,7 +92,8 @@
 		  </form>
 	</div>
 	
-	<script src="Js/validate.js"></script>
+	<script src="./validate.js"></script>
+	<script src="./print.js"></script>
 
 
 
