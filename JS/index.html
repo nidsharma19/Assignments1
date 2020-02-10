@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="Css/Styles.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<title>User Registration Form</title>
+</head>
+<body>
+	<div class="container userDetail pb-5">
+		<h5>User Registration Form</h5> <br>
+		<form name="UDetails" method="POST" action="my.html" onsubmit="return validation()"> 
+			<div class="row">
+			  <div class="col-4 mb-2">
+				<input type="text" class="form-control" placeholder="First name" name="firstname" minLength="3" maxLength="20">
+			  </div>
+			  <div class="col-4 mb-2">
+				<input type="text" class="form-control" placeholder="Middle name" name="middlename" minLength="3" maxLength="30">
+			  </div>
+			  <div class="col-4 mb-2">
+				<input type="text" class="form-control" placeholder="Last name" name="lastname" minLength="3" maxLength="30">
+			  </div>
+			  <div class="col-4 mb-2">
+				<input type="email" class="form-control" placeholder="Email" name="email">
+			  </div>
+			  <div class="col-4 mb-2">
+				<input type="password" class="form-control" placeholder="Password" name="password"  >
+			  </div>
+			  <div class="col-4 mb-2">
+				<input type="number" class="form-control" placeholder="Mobile" name="mobile" minlength="10"
+				maxlength="10">
+			  </div>
+			  <div class="col-4 mb-2">
+				Date Of Birth:
+				<input type="date" class="form-control" id="dob" placeholder="Birthday" name="birthday">
+			  </div>
+			  <div class="col-4 mb-2 gender">
+				Gender:<br>
+				<select class="form-control" name="gender">
+					<option value="default" >default</option>
+					<option value="Women" >Women</option>
+					<option value="Men">Men</option>
+				</select> <br>
+				</div>
+				<div class="col-4 mb-2 nationality">
+					Nationality: <br>
+					<select class="form-control" name=" Nationality">
+						<option value="default" >Indian</option>
+						<option value="Other" >Other</option>
+						<option value="NRI" >NRI</option>
+					</select> <br>
+				</div>
+				<div class="col hobbies">	
+					Hobbies:<br>
+					<label class="form-check-label" for="Cricket">Cricket</label>
+					<input class="form-check-inline" type="checkbox" name="hobbies">
+					<label class="form-check-label" for="Badminton">Badminton</label>
+					<input class="form-check-inline" type="checkbox" name="hobbies">
+					<label class="form-check-label" for="Football">Football</label>
+					<input class="form-check-inline" type="checkbox" name="hobbies">
+					<label class="form-check-label" for="Volleyball">Volleyball</label>
+					<input class="form-check-inline" type="checkbox" name="hobbies">
+					<label class="form-check-label" for="Cycling">Cycling</label>
+					<input class="form-check-inline" type="checkbox" name="hobbies">
+					<label class="form-check-label" for="ReadingBooks">Reading Books</label>
+					<input class="form-check-inline" type="checkbox" name="hobbies">
+					<label class="form-check-label" for="Singing">Singing</label>
+					<input class="form-check-inline" type="checkbox" name="hobbies">
+					<label class="form-check-label" for="Sketching">Sketching</label>
+					<input class="form-check-inline" type="checkbox" name="hobbies">
+				</div>
+				<br>
+				<br>
+				<br>
+				<div class="col-12 education">
+					Education: <br>
+					<select class="form-control col-4" name="Education">
+						<option value="Primary">Primary</option>
+						<option value="High School" >High School</option>
+						<option value="Intermediate">Intermediate</option>
+						<option value="Graduation" >Graduation</option>
+						<option value="Post Graduation">Post Graduation</option>
+						<option value="Doctrate" >Doctrate</option>
+						<option value="Research">Research</option>
+					</select><br> <br>
+				</div>
+				<div class="col form-action">
+					<input class="btn btn-success" type="submit" value="Submit">
+				
+					<input class="btn btn-dark" type="reset">
+				</div>
+			</div>
+		  </form>
+	</div>
+	
+	<script src="Js/validate.js"></script>
+
+
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
+

@@ -1,0 +1,21 @@
+.userDetail {
+    margin-top: 50px;
+    background-color: lavender;
+    border: 2px double blueviolet;
+    border-radius: 5px;
+  }
+
+form {
+    margin-top: 25px;
+}
+
+h5 {
+  text-align: center;
+}
+
+.form-action {
+  text-align: center;
+}
+
+  
+  
