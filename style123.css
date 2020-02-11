@@ -1,0 +1,56 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+
+	
+
+.head{
+	padding: 10px 10px 10px 10px;
+	margin: 10;
+	font-family:fantasy;
+	color: #00E900;
+}
+
+.NavBar{
+	padding: 14px 16px;
+	background-color: #4B4248;
+	color: white;
+	text-decoration:none ;
+
+}
+.LeftNav{
+	width: 20%;
+	height:500px;
+	background-color: #B4ADB1;
+	display: inline-block;
+	float: left;
+	font: sans-serif;
+	color: white;
+	padding: 18px 17px;
+	text-decoration : none;
+	overflow-y : scroll;
+	
+}
+.CenterBlock{
+	width: 60%;
+	height: 500px;
+	background-color: white;
+	position: absolute;
+	display: inline-block;
+}
+
+.RightBlock{
+	width: 20%;
+	height:500px;
+	background-color: red;
+	float: Right;
+
+
+}
+
+.headline{
+	font-family: cursive;
+	font-size: 28;
+
+}
