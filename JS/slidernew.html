@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image slider</title>
+</head>
+<body style="background-color:black;border-width:60px;border-height:90px;border-color:black;border:dashed;padding-top:20px;padding-bottom:40px;padding-left:40px;padding-right:20px">
+	<div >
+		<span><button onclick="prev()">prev</button></span>
+		<span><img style="border-width:30px;border-color:black; border: solid;" id = "img" alt="image" height="500px" width="1025px"></span>
+		<span><button onclick="next()">next</button></span>
+	</div>
+<script type="text/javascript">
+	   
+	var c = 0;
+	const json = [
+					{	
+						"link":"https://res.cloudinary.com/dk-find-out/image/upload/q_80,w_1920,f_auto/DCTM_Penguin_UK_DK_AL769849_op0o5s.jpg"
+					},
+					{	
+						"link":"https://res.cloudinary.com/dk-find-out/image/upload/q_80,w_640,f_auto/DCTM_Penguin_UK_DK_AL544649_wzzgmx.png"
+					},
+					{	
+						"link":"https://lh3.googleusercontent.com/proxy/svKEaRUH9LCk6sJ44MdcKky7gfiPGfH9yRk5CDRGCRIS8Ya1H_0Lg2vGV4AF6yYh0qhV07QcfvUwiMNtfaf5sZclLGwWKxt28nS4x5-4ml47"
+
+					},
+					{	
+						"link":"https://i.pinimg.com/originals/cc/2f/f4/cc2ff4baa907f7ce6b54b35321260c48.jpg"
+					},
+					{	
+						"link":"https://res.cloudinary.com/dk-find-out/image/upload/q_80,w_960,f_auto/DCTM_Penguin_UK_DK_AL526630_wkmzns.jpg"
+					}
+				]
+
+ function default_image(){ 
+		 
+ 		  	document.getElementById("img").src = json[0].link;
+		  	console.log(json[0].link);
+		 }
+	
+	default_image();
+
+		  function prev(){ 
+		  	c--;
+		  	if(c < 0){
+		  	c = json.length;
+		  }
+
+		  	document.getElementById("img").src = json[c].link;
+		  	console.log(json[c].link);
+		  	
+	               }
+	prev();
+		  
+		  function next(){
+		  	c++;
+		  	if(c >= json.length){
+		  	c=0;
+		  }
+		  	document.getElementById("img").src = json[c].link;
+		  
+		  	  }
+</script>
+
+</body>
+</html>
